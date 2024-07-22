@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+    <title>Tri-game</title>
+    <style>
+        .buttons {
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+            background-color: black ;
+            height: 100vh;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            font-family: "Playwrite CU", sans-serif;
+            font-size: 60px;
+        }
+        .buttono, .buttont, .buttonth {
+            background-size: 100%;
+            background-position: center;
+            height: 200px;
+            width: 300px;
+            border-radius: 15px;
+            border:5px solid white;
+        }
+        .buttono {
+            background-image: url(dice.jpg);
+        }
+        .buttont {
+            background-image: url(drums.jpg);
+        }
+        .buttonth {
+            background-image: url(simon.jpeg);
+        }
+        .buttons {
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        p {
+            display: none;
+            color: rgb(255, 255, 255);
+            font-family: "Playwrite CU", sans-serif;
+            font-size: 40px;
+        }
+        #dice {
+            margin-top: 100px;
+            margin-right: 120px;
+        }
+        body {
+            background-color: black;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        button:hover {
+            transform: scale(1.1);
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        button:hover p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="buttons">
+    <button class="buttono" onclick="goDice()"><p>Dice</p></button>
+    <button class="buttont" onclick="goDrums()"><p>Drums</p></button>
+    <button class="buttonth" onclick="goSimon()"><p>Simon</p></button>
+    <p style="text-align: center; color: white; display: block;">--Choose wisely-- </p>
+</div>
+<script>
+    function goDice() {
+        window.location.href = "dice.html";
+    }
+    function goDrums() {
+        window.location.href = "drums.html";
+    }
+    function goSimon() {
+        window.location.href = "simon.html";
+    }
+</script>
+</body>
+</html>

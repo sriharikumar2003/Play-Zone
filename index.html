@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    button{
+        width: 300px;
+        height: 300px;
+        font-size: 100px;
+        border-radius: 50%;
+        color: white;
+        border: none;
+        background-color: greenyellow;
+    }
+    button:hover{
+        cursor:pointer;
+    }
+    button:active{
+        background-color: rgb(199, 242, 133);
+
+    }
+    h1{
+        font-family: "Ga Maamli",sans-serif;
+        font-size: 60px;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <h1>Tap on the button to play</h1>
+   <button data-url="select one/front.html">▶</button> 
+
+   <script>
+    var button = document.querySelector("button");
+    button.addEventListener("click",function(){
+        window.location.href = "front.html";
+    })
+
+   </script>
+</body>
+</html>
